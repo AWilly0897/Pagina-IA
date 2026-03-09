@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Artículo 6 — Git básico: versionar sin miedo</title>
+  <link rel="stylesheet" href="../css/estilo.css">
+  <link rel="stylesheet" href="../css/formulario.css">
+</head>
+<body data-articulo-id="articulo6">
+  <header class="site-header">
+    <h1>Artículo 6 — Git básico: versionar sin miedo</h1>
+    <p class="lead">Comandos esenciales para mantener tu trabajo seguro y colaborar sin romper producción.</p>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Comandos mínimos</h2>
+      <ul>
+        <li><code>git init</code> — iniciar repo</li>
+        <li><code>git status</code> — ver cambios</li>
+        <li><code>git add .</code> — preparar cambios</li>
+        <li><code>git commit -m "mensaje"</code> — guardar snapshot</li>
+        <li><code>git push origin main</code> — subir al remoto</li>
+        <li><code>git checkout -b rama-nueva</code> — crear rama</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Buenas prácticas</h2>
+      <ol>
+        <li>Hacer commits pequeños y descriptivos.</li>
+        <li>Crear ramas para features o correcciones.</li>
+        <li>Hacer backup antes de cambios grandes (crear rama de respaldo).</li>
+      </ol>
+    </section>
+
+    <section id="laboratorio">
+      <h2>Laboratorio</h2>
+      <p>En la raíz del proyecto ejecutá los comandos para crear una rama de respaldo y pusheala al remoto (si tenés remoto configurado).</p>
+    </section>
+  </main>
+
+  <div id="bloque-footer"></div>
+
+  <script src="../js/script.js"></script>
+  <script src="../js/comentario.js"></script>
+</body>
+</html>
+

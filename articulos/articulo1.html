@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Artículo 1 — Introducción y estructura del proyecto</title>
+  <link rel="stylesheet" href="../css/estilo.css">
+  <link rel="stylesheet" href="../css/formulario.css">
+  <link rel="stylesheet" href="../css/footer.css">
+</head>
+
+<body data-articulo-id="articulo1">
+  <header class="site-header">
+    <h1>Artículo 1 — Introducción y estructura del proyecto</h1>
+    <p class="lead">Qué es este proyecto, por qué la IA ayuda y por qué las bases técnicas son necesarias.</p>
+    <nav>
+      <a href="articulo2.html">Ir al Artículo 2</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Resumen</h2>
+      <p>Este proyecto, <strong>Pensamiento-Abierto-Tercera-Edición</strong>, es una guía práctica y un laboratorio
+        mínimo para que cualquier persona pueda entender cómo la IA puede ayudar en tareas web, y qué conocimientos
+        básicos son imprescindibles para trabajar con ella.</p>
+    </section>
+
+    <section>
+      <h2>Estructura del proyecto</h2>
+      <ul>
+        <li><strong>index.html</strong> — índice con enlaces a los artículos.</li>
+        <li><strong>articulos/</strong> — páginas individuales con <i>data-articulo-id</i></li>
+        <li><strong>componentes/</strong> — <i>formulario-comentario.html</i> y <i>footer.html</i>.</li>
+        <li><strong>css/</strong> — estilos globales y del formulario.</li>
+        <li><strong>js/</strong> — scripts para cargar componentes y manejar comentarios.</li>
+      </ul>
+    </section>
+
+    <section id="laboratorio">
+      <h2>Laboratorio</h2>
+      <p>Probá el formulario de comentarios abajo. Si abrís el proyecto localmente, usá un servidor HTTP (no abrir con doble clic).</p>
+
+      <div id="bloque-formulario"></div>
+
+      <section id="comentarios-publicados">
+        <h3>Comentarios</h3>
+        <ul id="lista-publicados"></ul>
+      </section>
+    </section>
+
+    <section>
+      <h2>Cómo probar localmente</h2>
+      <ol>
+        <li>Abrí la terminal en la raíz del proyecto.</li>
+        <li>Ejecutá <i>python -m http.server 8000</i> o <i>npx http-server . -p 8000</i>.</li>
+        <li>Abrí <i>http://localhost:8000/articulos/articulo1.html</i> en el navegador.</li>
+        <li>DevTools → Network: verificar que <i>componentes/formulario-comentario.html</i> y <i>componentes/footer.html</i> devuelvan 200.</li>
+      </ol>
+    </section>
+
+    <!-- Ejercicios integrados dentro del main -->
+    <section id="ejercicios">
+      <h2>Ejercicios prácticos</h2>
+
+      <article>
+        <h3>Ejercicio guiado</h3>
+        <ol>
+          <li>Abre el proyecto en tu editor de código.</li>
+          <li>Verifica que la carpeta <code>articulos/</code> contiene <code>articulo1.html</code>.</li>
+          <li>Agrega un nuevo archivo <code>articulo-test.html</code> dentro de <code>articulos/</code>.</li>
+          <li>En <code>index.html</code>, enlaza este nuevo archivo y comprueba que el enlace funciona.</li>
+        </ol>
+        <p><strong>Objetivo:</strong> entender cómo se conectan las rutas y comprobar que la estructura es reproducible.</p>
+      </article>
+
+      <article>
+        <h3>Ejercicio libre</h3>
+        <p>Crea una carpeta llamada <code>imagenes/</code> y coloca dentro una imagen de prueba. 
+        Luego enlázala desde <code>articulo1.html</code> usando la etiqueta <code>&lt;img&gt;</code>. 
+        Verifica en DevTools → Network que la imagen se carga correctamente (status 200).</p>
+        <p><strong>Objetivo:</strong> practicar la organización de recursos y validar rutas relativas.</p>
+      </article>
+
+      <article>
+        <h3>Checklist final</h3>
+        <ul>
+          <li>✔ El proyecto se abre en un servidor local.</li>
+          <li>✔ Los enlaces entre artículos funcionan.</li>
+          <li>✔ Los componentes se cargan con status 200.</li>
+          <li>✔ La imagen de prueba aparece correctamente.</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <div id="bloque-footer"></div>
+
+  <script src="../js/script.js"></script>
+  <script src="../js/comentario.js"></script>
+</body>
+</html>
+

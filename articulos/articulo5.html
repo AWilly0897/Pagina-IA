@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Artículo 5 — Servidores y por qué no usar file://</title>
+  <link rel="stylesheet" href="../css/estilo.css">
+  <link rel="stylesheet" href="../css/formulario.css">
+</head>
+<body data-articulo-id="articulo5">
+  <header class="site-header">
+    <h1>Artículo 5 — Servidores y por qué no usar file://</h1>
+    <p class="lead">Explicación práctica de HTTP, orígenes y por qué muchas funciones (fetch, módulos) requieren un servidor.</p>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Por qué usar un servidor local</h2>
+      <p>El navegador trata los archivos locales como orígenes distintos y bloquea ciertas operaciones por seguridad. Un servidor local simula el entorno real y evita errores como <code>Failed to fetch</code>.</p>
+    </section>
+
+    <section>
+      <h2>Cómo levantar un servidor</h2>
+      <ul>
+        <li><strong>Python 3:</strong> <code>python -m http.server 8000</code></li>
+        <li><strong>Node:</strong> <code>npx http-server . -p 8000</code></li>
+        <li><strong>VS Code:</strong> extensión Live Server</li>
+      </ul>
+    </section>
+
+    <section id="laboratorio">
+      <h2>Laboratorio</h2>
+      <p>Levanta el servidor y abre <code>http://localhost:8000/articulos/articulo5.html</code>. En Network verifica que <code>componentes/formulario-comentario.html</code> y <code>componentes/footer.html</code> devuelvan 200.</p>
+    </section>
+
+    <section>
+      <h2>Ejercicio sugerido</h2>
+      <p>Prueba abrir el archivo con <code>file://</code> y observa la consola; luego levanta el servidor y compara el comportamiento.</p>
+    </section>
+  </main>
+
+  <div id="bloque-footer"></div>
+
+  <script src="../js/script.js"></script>
+  <script src="../js/comentario.js"></script>
+</body>
+</html>
+

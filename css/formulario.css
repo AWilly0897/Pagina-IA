@@ -1,0 +1,25 @@
+/* css/formulario.css */
+.formulario-testimonial{
+  background: #fff;
+  border: 1px solid #e6e9ee;
+  border-radius:8px;
+  padding:1rem;
+  margin:1rem 0;
+  box-shadow:0 6px 18px rgba(3,19,34,0.04);
+}
+
+.formulario-testimonial h2{margin:0 0 .5rem 0;font-size:1.1rem;color:#002b55}
+.formulario-testimonial label{display:block;margin:.6rem 0 .25rem 0;font-weight:600;color:#12324a}
+.formulario-testimonial input[type="text"],
+.formulario-testimonial textarea{
+  width:100%;padding:.6rem .75rem;border:1px solid #cfd8e3;border-radius:6px;background:#fbfdff;color:#072033;font-size:.95rem;
+}
+.formulario-testimonial textarea{min-height:100px;resize:vertical}
+.formulario-testimonial button{
+  margin-top:.8rem;padding:.6rem 1rem;background:linear-gradient(180deg,#0066cc 0%,#005bb5 100%);color:#fff;border:none;border-radius:6px;font-weight:700;cursor:pointer;
+}
+.formulario-testimonial button:hover{transform:translateY(-1px)}
+@media (max-width:520px){
+  .formulario-testimonial{padding:.8rem}
+}
+

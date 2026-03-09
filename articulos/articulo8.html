@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Artículo 8 — APIs y seguridad mínima</title>
+  <link rel="stylesheet" href="../css/estilo.css">
+  <link rel="stylesheet" href="../css/formulario.css">
+</head>
+<body data-articulo-id="articulo8">
+  <header class="site-header">
+    <h1>Artículo 8 — APIs y seguridad mínima</h1>
+    <p class="lead">Qué es una API, cómo consumirla y reglas básicas para no exponer secretos.</p>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Conceptos</h2>
+      <p>API = interfaz para que aplicaciones se comuniquen. Usá HTTPS, no incluyas tokens en el frontend y validá entradas en el backend.</p>
+    </section>
+
+    <section>
+      <h2>Ejemplo práctico</h2>
+      <p>En este proyecto el envío opcional de comentarios apunta a <code>/api/nuevo-comentario</code>. Si implementás ese endpoint, guardá secretos en variables de entorno y validá datos.</p>
+    </section>
+
+    <section id="laboratorio">
+      <h2>Laboratorio</h2>
+      <p>Simulá una respuesta de API con <code>fetch</code> a un JSON local (archivo en <code>public/</code>) y maneja el resultado en la UI.</p>
+    </section>
+  </main>
+
+  <div id="bloque-footer"></div>
+
+  <script src="../js/script.js"></script>
+  <script src="../js/comentario.js"></script>
+</body>
+</html>
+
