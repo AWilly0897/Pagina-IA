@@ -1,30 +1,10 @@
-### README.md
-
-```markdown
+README.md
 # Pensamiento-Abierto-Tercera-Edición
 
 Proyecto educativo y laboratorio mínimo para aprender a integrar IA con fundamentos web.
 
 ## Estructura del proyecto
-```
-Pensamiento-Abierto-Tercera-Edición/
-├─ index.html
-├─ articulos/
-│  ├─ articulo1.html
-│  ├─ articulo2.html
-│  ├─ articulo3.html
-│  └─ ... articulo10.html
-├─ componentes/
-│  ├─ formulario-comentario.html
-│  └─ footer.html
-├─ css/
-│  ├─ estilo.css
-│  └─ formulario.css
-├─ js/
-│  ├─ script.js
-│  └─ comentario.js
-└─ README.md
-```
+Pensamiento-Abierto-Tercera-Edición/ ├─ index.html ├─ articulos/ │ ├─ articulo1.html │ ├─ articulo2.html │ ├─ articulo3.html │ └─ ... articulo10.html ├─ componentes/ │ ├─ formulario-comentario.html │ └─ footer.html ├─ css/ │ ├─ estilo.css │ └─ formulario.css ├─ js/ │ ├─ script.js │ └─ comentario.js └─ README.md
 
 ## Requisitos mínimos
 - Navegador moderno.
@@ -36,43 +16,28 @@ Pensamiento-Abierto-Tercera-Edición/
    ```bash
    git clone <URL-del-repo>
    cd Pensamiento-Abierto-Tercera-Edición
-   ```
-2. Levantar servidor HTTP (opciones):
-   - Python 3:
-     ```bash
-     python -m http.server 8000
-     ```
-   - Node:
-     ```bash
-     npx http-server . -p 8000
-     ```
-3. Abrir en el navegador:
-   ```
-   http://localhost:8000
-   ```
-
-## Qué verificar
-- DevTools → Network: `componentes/formulario-comentario.html` y `componentes/footer.html` deben devolver 200.
-- DevTools → Console: no debe aparecer `Failed to fetch`.
-- Application → Local Storage: la clave `comentariosPublicados` se crea al enviar un comentario.
-
-## Cómo contribuir
-1. Crear una rama:
-   ```bash
-   git checkout -b mejora-mi-articulo
-   ```
-2. Hacer cambios y commitear:
-   ```bash
-   git add .
-   git commit -m "Mejora: descripción del cambio"
-   git push origin mejora-mi-articulo
-   ```
-3. Abrir Pull Request en GitHub.
-
-## Notas
-- No abrir archivos con doble clic (evitar `file://`).
-- Los comentarios se guardan en `localStorage` para la demo; el backend es opcional.
-```
+2.	Levantar servidor HTTP (opciones): 
+o	Python 3: 
+o	python -m http.server 8000
+o	Node: 
+o	npx http-server . -p 8000
+3.	Abrir en el navegador: 
+4.	http://localhost:8000
+Qué verificar
+•	DevTools → Network: componentes/formulario-comentario.html y componentes/footer.html deben devolver 200.
+•	DevTools → Console: no debe aparecer Failed to fetch.
+•	Application → Local Storage: la clave comentariosPublicados se crea al enviar un comentario.
+Cómo contribuir
+1.	Crear una rama: 
+2.	git checkout -b mejora-mi-articulo
+3.	Hacer cambios y commitear: 
+4.	git add .
+5.	git commit -m "Mejora: descripción del cambio"
+6.	git push origin mejora-mi-articulo
+7.	Abrir Pull Request en GitHub.
+Notas
+•	No abrir archivos con doble clic (evitar file://).
+•	Los comentarios se guardan en localStorage para la demo; el backend es opcional.
 
 ---
 
@@ -80,5 +45,3 @@ Pensamiento-Abierto-Tercera-Edición/
 - **Pegar** cada bloque en su archivo correspondiente respetando rutas.  
 - **Levantar** servidor local y abrir `http://localhost:8000` para probar.  
 - **Verificar** Network y Console en DevTools; si algo devuelve 404, corregir la ruta relativa.  
-
-Si querés, continúo generando los artículos 4–10 con contenido didáctico y ejercicios prácticos listos para pegar. ¿Los genero ahora?

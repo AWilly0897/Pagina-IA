@@ -1,4 +1,3 @@
-// js/script.js
 document.addEventListener("DOMContentLoaded", () => {
   async function cargar(url, id, fallback) {
     const cont = document.getElementById(id);
@@ -25,6 +24,5 @@ document.addEventListener("DOMContentLoaded", () => {
     </section>
   `);
 
-  cargar("../componentes/footer.html", "bloque-footer", `<footer class="site-footer"><p>Pensamiento-Abierto-Tercera-Edicion · © 2026</p></footer>`);
+  cargar("../componentes/footer.html", "bloque-footer", `<footer class="site-footer"><p>Pensamiento-Abierto-Tercera-Edicion · © 2026 Ernesto I. Lora</p></footer>`);
 });
-

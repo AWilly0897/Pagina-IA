@@ -1,4 +1,4 @@
-// js/comentario.js
+
 document.addEventListener("submit", async function (e) {
   if (!e.target || e.target.id !== "formulario-comentario") return;
   e.preventDefault();
