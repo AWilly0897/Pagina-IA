@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Artículo 1 — Introducción y estructura del proyecto</title>
+  <link rel="stylesheet" href="../css/estilo.css">
+  <link rel="stylesheet" href="../css/formulario.css">
+</head>
+<body data-articulo-id="articulo1">
+  <header class="site-header">
+    <h1>Artículo 1 — Introducción y estructura del proyecto</h1>
+    <p class="lead">Qué es este proyecto, por qué la IA ayuda y por qué las bases técnicas son necesarias.</p>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Resumen</h2>
+      <p>Este proyecto, <strong>Pagina-IA</strong>, es una guía práctica y un laboratorio mínimo para que cualquier persona pueda entender cómo la IA puede ayudar en tareas web, y qué conocimientos básicos son imprescindibles para trabajar con ella.</p>
+    </section>
+
+    <section>
+      <h2>Estructura del proyecto</h2>
+      <ul>
+        <li><strong>index.html</strong> — índice con enlaces a los artículos.</li>
+        <li><strong>articulos/</strong> — páginas individuales con <code>data-articulo-id</code>.</li>
+        <li><strong>componentes/</strong> — <code>formulario-comentario.html</code> y <code>footer.html</code>.</li>
+        <li><strong>css/</strong> — estilos globales y del formulario.</li>
+        <li><strong>js/</strong> — scripts para cargar componentes y manejar comentarios.</li>
+      </ul>
+    </section>
+
+    <section id="laboratorio">
+      <h2>Laboratorio</h2>
+      <p>Probá el formulario de comentarios abajo. Si abrís el proyecto localmente, usá un servidor HTTP (no abrir con doble clic).</p>
+
+      <div id="bloque-formulario"></div>
+
+      <section id="comentarios-publicados">
+        <h3>Comentarios</h3>
+        <ul id="lista-publicados"></ul>
+      </section>
+    </section>
+
+    <section>
+      <h2>Cómo probar localmente</h2>
+      <ol>
+        <li>Abrí la terminal en la raíz del proyecto.</li>
+        <li>Ejecutá <code>python -m http.server 8000</code> o <code>npx http-server . -p 8000</code>.</li>
+        <li>Abrí <code>http://localhost:8000/articulos/articulo1.html</code> en el navegador.</li>
+        <li>DevTools → Network: verificar que <code>componentes/formulario-comentario.html</code> y <code>componentes/footer.html</code> devuelvan 200.</li>
+      </ol>
+    </section>
+  </main>
+
+  <div id="bloque-footer"></div>
+
+  <script src="../js/script.js"></script>
+  <script src="../js/comentario.js"></script>
+</body>
+</html>

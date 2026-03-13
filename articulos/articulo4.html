@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Artículo 4 — JavaScript: comportamiento y lógica</title>
+  <link rel="stylesheet" href="../css/estilo.css">
+  <link rel="stylesheet" href="../css/formulario.css">
+</head>
+<body data-articulo-id="articulo4">
+  <header class="site-header">
+    <h1>Artículo 4 — JavaScript: comportamiento y lógica</h1>
+    <p class="lead">Cómo JavaScript conecta la interfaz con la lógica: eventos, DOM y fetch.</p>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Qué aprenderás</h2>
+      <p>Entenderás cómo reaccionar a acciones del usuario (clicks, envíos), cómo manipular el DOM y cómo manejar peticiones a APIs con <code>fetch</code>. También verás buenas prácticas para evitar errores comunes.</p>
+    </section>
+
+    <section>
+      <h2>Conceptos clave</h2>
+      <ul>
+        <li><strong>Eventos:</strong> escuchar y responder (ej. submit, click).</li>
+        <li><strong>DOM:</strong> seleccionar nodos, crear y actualizar contenido.</li>
+        <li><strong>Asincronía:</strong> promesas, async/await y manejo de errores.</li>
+        <li><strong>Validación:</strong> comprobar entradas antes de procesarlas.</li>
+      </ul>
+    </section>
+
+    <section id="ejemplo">
+      <h2>Ejemplo práctico</h2>
+      <p>En este proyecto el archivo <code>js/comentario.js</code> gestiona el envío del formulario, guarda en <code>localStorage</code> y renderiza los comentarios. Abrí DevTools → Console para ver errores y Network para ver peticiones.</p>
+    </section>
+
+    <section id="laboratorio">
+      <h2>Laboratorio</h2>
+      <ol>
+        <li>Abre la página y envía un comentario desde el formulario.</li>
+        <li>En DevTools → Console busca mensajes de error o advertencia.</li>
+        <li>En DevTools → Application → Local Storage revisa la clave <code>comentariosPublicados</code>.</li>
+        <li>Modifica temporalmente <code>js/comentario.js</code> para añadir un <code>console.log</code> y recarga para ver el flujo.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Ejercicio sugerido</h2>
+      <p>Agregá una validación que impida enviar comentarios con menos de 10 caracteres y muestre un mensaje amigable al usuario.</p>
+    </section>
+  </main>
+
+  <div id="bloque-footer"></div>
+
+  <script src="../js/script.js"></script>
+  <script src="../js/comentario.js"></script>
+</body>
+</html>
