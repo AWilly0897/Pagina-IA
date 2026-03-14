@@ -1,47 +1,44 @@
-README.md
 # Pensamiento-Abierto-Tercera-Edición
 
-Proyecto educativo y laboratorio mínimo para aprender a integrar IA con fundamentos web.
+Proyecto educativo y de laboratorio para aprender a integrar IA con fundamentos web.
 
-## Estructura del proyecto
-Pensamiento-Abierto-Tercera-Edición/ ├─ index.html ├─ articulos/ │ ├─ articulo1.html │ ├─ articulo2.html │ ├─ articulo3.html │ └─ ... articulo10.html ├─ componentes/ │ ├─ formulario-comentario.html │ └─ footer.html ├─ css/ │ ├─ estilo.css │ └─ formulario.css ├─ js/ │ ├─ script.js │ └─ comentario.js └─ README.md
+# Rama creativa de Pagina-IA
 
-## Requisitos mínimos
-- Navegador moderno.
-- Node.js (opcional) o Python 3 para servidor local.
-- Git si querés versionar y subir a GitHub.
+Esta rama contiene los archivos desarrollados en **Pensamiento-Abierto-Tercera-Edición**, que amplían y enriquecen el proyecto original **Pagina-IA**.
 
-## Ejecutar localmente (pasos rápidos)
-1. Clonar el repositorio:
-   ```bash
-   git clone <URL-del-repo>
-   cd Pensamiento-Abierto-Tercera-Edición
-2.	Levantar servidor HTTP (opciones): 
-o	Python 3: 
-o	python -m http.server 8000
-o	Node: 
-o	npx http-server . -p 8000
-3.	Abrir en el navegador: 
-4.	http://localhost:8000
-Qué verificar
-•	DevTools → Network: componentes/formulario-comentario.html y componentes/footer.html deben devolver 200.
-•	DevTools → Console: no debe aparecer Failed to fetch.
-•	Application → Local Storage: la clave comentariosPublicados se crea al enviar un comentario.
-Cómo contribuir
-1.	Crear una rama: 
-2.	git checkout -b mejora-mi-articulo
-3.	Hacer cambios y commitear: 
-4.	git add .
-5.	git commit -m "Mejora: descripción del cambio"
-6.	git push origin mejora-mi-articulo
-7.	Abrir Pull Request en GitHub.
-Notas
-•	No abrir archivos con doble clic (evitar file://).
-•	Los comentarios se guardan en localStorage para la demo; el backend es opcional.
+- La rama `main` conserva la versión estable y publicada en GitHub Pages.
+- La rama `creativa` es un espacio de laboratorio y colaboración, donde se integran ejercicios, componentes adicionales y pruebas con IA.
+
+👉 Si querés colaborar, trabajá sobre esta rama y proponé tus cambios mediante Pull Requests.  
+De esta forma mantenemos intacta la versión original y a la vez hacemos crecer el proyecto.
 
 ---
 
-### Instrucciones finales rápidas
-- **Pegar** cada bloque en su archivo correspondiente respetando rutas.  
-- **Levantar** servidor local y abrir `http://localhost:8000` para probar.  
-- **Verificar** Network y Console en DevTools; si algo devuelve 404, corregir la ruta relativa.  
+## Estructura actual de la rama creativa
+- `articulos/` → artículos 1 a 10 con ejemplos prácticos.
+- `componentes/` → footer y formulario de comentarios.
+- `css/` → estilos generales, footer, formulario, header-logo y nav.
+- `imagenes/` → incluye `rodano.png`.
+- `js/` → scripts de comentarios y funciones principales.
+- `favicon.ico` → ícono del sitio.
+- `index.html` → página principal con enlaces a todos los artículos.
+- `README.md` → documentación de la rama creativa.
+
+---
+
+## Cambios y acciones realizadas hasta ahora
+- Se agregó **nav** y estilos asociados (`css/nav.css`).
+- Se implementó un **formulario de comentarios** en `articuloX.html` con `fetch`.
+- Se incorporó el **favicon.ico** en la raíz del proyecto.
+- Se actualizaron títulos y footer para usar **Pagina-IA** como nombre oficial.
+- Se diferenciaron claramente las ramas:  
+  - `main` → versión estable.  
+  - `creativa` → laboratorio con ejercicios y ampliaciones.
+
+---
+
+## Próximos pasos
+- Documentar cada ejercicio con su propósito en los artículos.  
+- Agregar persistencia o backend para el formulario de comentarios.  
+- Seguir ampliando la guía con ejemplos más avanzados de integración de IA.
+
